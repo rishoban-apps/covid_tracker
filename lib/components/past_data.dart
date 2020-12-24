@@ -50,7 +50,7 @@ class _PastDataState extends State<PastData>
             height: 20.0,
           ),
           Container(
-            height: 80.0,
+            height: 100.0,
             child: TabBarView(
               controller: _tabController,
               children: <Widget>[

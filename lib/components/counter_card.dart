@@ -20,12 +20,20 @@ class CounterCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              title,
-              style: kCardTextStyle,
+            FittedBox(
+              fit: BoxFit.fitWidth,
+              child: Text(
+                title,
+                style: kCardTextStyle,
+              ),
             ),
-            Text(count,
-                style: kCardTextStyle.copyWith(fontWeight: FontWeight.w800)),
+            FittedBox(
+              fit: BoxFit.fitWidth,
+              child: Text(
+                count,
+                style: kCardTextStyle.copyWith(fontWeight: FontWeight.w800),
+              ),
+            ),
           ],
         ),
       ),
